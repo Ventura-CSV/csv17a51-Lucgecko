@@ -18,7 +18,7 @@ def get_range(mapping: dict) -> set:
 def is_well_defined(mapping: dict, target: set) -> bool:
     """Return True if every output value is in the target set."""
     # === TODO ===
-    # Your code here
+    return set(mapping.values()).subset(target)
     pass
     # === END TODO ===
 
