@@ -42,6 +42,7 @@ def is_surjective(mapping: dict, target: set) -> bool:
 def is_bijective(mapping: dict, target: set) -> bool:
     """Return True if f is both injective and surjective."""
     # === TODO ===
-    # Your code here
-    pass
+    #combine logic from is_injective and is_surjective for a common one-to-one, it must be injective and surjective essentially
+    return is_injective(mapping) and is_surjective(mapping, target)
     # === END TODO ===
+#Every element in the target must be tied to exactly one input, and likely this must be invertible to maintain functionality
