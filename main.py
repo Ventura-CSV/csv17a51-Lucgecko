@@ -4,10 +4,9 @@ from __future__ import annotations
 def get_domain(mapping: dict) -> set:
     """Return the domain X (all inputs of the function)."""
     # === TODO ===
-    # Your code here
-    pass
+    return set(mapping)
     # === END TODO ===
-
+#domain includes all unique keys, iterate over with set which defaults to only keys
 
 def get_range(mapping: dict) -> set:
     """Return the range — the set of outputs actually mapped to."""
