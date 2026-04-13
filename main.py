@@ -25,9 +25,10 @@ def is_well_defined(mapping: dict, target: set) -> bool:
 def is_injective(mapping: dict) -> bool:
     """Return True if f is one-to-one (no two inputs map to same output)."""
     # === TODO ===
-    # Your code here
-    pass
+    #injective is one-to-one, verify that every unique input key maps to a unique output value
+    return len(set(mapping.values())) == len(mapping)
     # === END TODO ===
+#len(mapping.values()) returns the number of unique values, len(mapping) returns the number of unique keys. Set cannot contain duplicates, so collisions occur when 2 keys are pointing to the same value
 
 
 def is_surjective(mapping: dict, target: set) -> bool:
