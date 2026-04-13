@@ -34,10 +34,10 @@ def is_injective(mapping: dict) -> bool:
 def is_surjective(mapping: dict, target: set) -> bool:
     """Return True if f is onto (range == target)."""
     # === TODO ===
-    # Your code here
-    pass
+    #surjective is onto, verify that every unique output value is in the target
+    return set(mapping.values()) == target
     # === END TODO ===
-
+#set(mapping.values()) identifies the range and removes duplicates, then == target checks if the range is covered for every element
 
 def is_bijective(mapping: dict, target: set) -> bool:
     """Return True if f is both injective and surjective."""
