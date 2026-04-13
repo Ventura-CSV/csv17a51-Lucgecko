@@ -11,10 +11,9 @@ def get_domain(mapping: dict) -> set:
 def get_range(mapping: dict) -> set:
     """Return the range — the set of outputs actually mapped to."""
     # === TODO ===
-    # Your code here
-    pass
+    return set(mapping.values())
     # === END TODO ===
-
+#mapping.values() returns the dict, set() returns the unique values even if there are multiple inputs with the same output
 
 def is_well_defined(mapping: dict, target: set) -> bool:
     """Return True if every output value is in the target set."""
