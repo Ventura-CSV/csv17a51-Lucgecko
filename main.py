@@ -18,10 +18,10 @@ def get_range(mapping: dict) -> set:
 def is_well_defined(mapping: dict, target: set) -> bool:
     """Return True if every output value is in the target set."""
     # === TODO ===
-    return set(mapping.values()).subset(target)
+    return set(mapping.values()).issubset(target)
     pass
     # === END TODO ===
-
+#<= operator could also work for this, or possibly with the all() function. This should work as long as the dictionary doesn't have any values outside of the target set
 
 def is_injective(mapping: dict) -> bool:
     """Return True if f is one-to-one (no two inputs map to same output)."""
